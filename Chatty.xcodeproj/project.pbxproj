@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B346090C236CADEB00CB11BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B346090B236CADEB00CB11BD /* SWRevealViewController.m */; };
 		B3EA9A4A236CA008003FCF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA9A49236CA008003FCF90 /* AppDelegate.swift */; };
 		B3EA9A4C236CA008003FCF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA9A4B236CA008003FCF90 /* SceneDelegate.swift */; };
 		B3EA9A4E236CA008003FCF90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA9A4D236CA008003FCF90 /* ViewController.swift */; };
 		B3EA9A51236CA008003FCF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EA9A4F236CA008003FCF90 /* Main.storyboard */; };
 		B3EA9A53236CA00B003FCF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EA9A52236CA00B003FCF90 /* Assets.xcassets */; };
 		B3EA9A56236CA00B003FCF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EA9A54236CA00B003FCF90 /* LaunchScreen.storyboard */; };
+		B3EA9A60236CA72A003FCF90 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B3EA9A5F236CA72A003FCF90 /* Alamofire */; };
+		B3EA9A63236CA764003FCF90 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B3EA9A62236CA764003FCF90 /* SwiftyJSON */; };
+		B3EA9A66236CA7CB003FCF90 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = B3EA9A65236CA7CB003FCF90 /* SocketIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3460909236CADEB00CB11BD /* Chatty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chatty-Bridging-Header.h"; sourceTree = "<group>"; };
+		B346090A236CADEB00CB11BD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B346090B236CADEB00CB11BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B3EA9A46236CA008003FCF90 /* Chatty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EA9A49236CA008003FCF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3EA9A4B236CA008003FCF90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		B3EA9A52236CA00B003FCF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3EA9A55236CA00B003FCF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3EA9A57236CA00B003FCF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3EA9A5D236CA580003FCF90 /* Chatty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chatty.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EA9A63236CA764003FCF90 /* SwiftyJSON in Frameworks */,
+				B3EA9A60236CA72A003FCF90 /* Alamofire in Frameworks */,
+				B3EA9A66236CA7CB003FCF90 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3460908236CADCE00CB11BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B346090A236CADEB00CB11BD /* SWRevealViewController.h */,
+				B346090B236CADEB00CB11BD /* SWRevealViewController.m */,
+				B3460909236CADEB00CB11BD /* Chatty-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B3EA9A3D236CA008003FCF90 = {
 			isa = PBXGroup;
 			children = (
+				B3460908236CADCE00CB11BD /* Supporting Files */,
 				B3EA9A48236CA008003FCF90 /* Chatty */,
 				B3EA9A47236CA008003FCF90 /* Products */,
 			);
@@ -56,6 +78,7 @@
 		B3EA9A48236CA008003FCF90 /* Chatty */ = {
 			isa = PBXGroup;
 			children = (
+				B3EA9A5D236CA580003FCF90 /* Chatty.entitlements */,
 				B3EA9A49236CA008003FCF90 /* AppDelegate.swift */,
 				B3EA9A4B236CA008003FCF90 /* SceneDelegate.swift */,
 				B3EA9A4D236CA008003FCF90 /* ViewController.swift */,
@@ -83,6 +106,11 @@
 			dependencies = (
 			);
 			name = Chatty;
+			packageProductDependencies = (
+				B3EA9A5F236CA72A003FCF90 /* Alamofire */,
+				B3EA9A62236CA764003FCF90 /* SwiftyJSON */,
+				B3EA9A65236CA7CB003FCF90 /* SocketIO */,
+			);
 			productName = Chatty;
 			productReference = B3EA9A46236CA008003FCF90 /* Chatty.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +127,7 @@
 				TargetAttributes = {
 					B3EA9A45236CA008003FCF90 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -111,6 +140,11 @@
 				Base,
 			);
 			mainGroup = B3EA9A3D236CA008003FCF90;
+			packageReferences = (
+				B3EA9A5E236CA72A003FCF90 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B3EA9A61236CA764003FCF90 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				B3EA9A64236CA7CB003FCF90 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = B3EA9A47236CA008003FCF90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +175,7 @@
 				B3EA9A4E236CA008003FCF90 /* ViewController.swift in Sources */,
 				B3EA9A4A236CA008003FCF90 /* AppDelegate.swift in Sources */,
 				B3EA9A4C236CA008003FCF90 /* SceneDelegate.swift in Sources */,
+				B346090C236CADEB00CB11BD /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,15 +319,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Chatty/Chatty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = P3ZEN42ERU;
 				INFOPLIST_FILE = Chatty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.particleq.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +344,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Chatty/Chatty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = P3ZEN42ERU;
 				INFOPLIST_FILE = Chatty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.particleq.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +386,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3EA9A5E236CA72A003FCF90 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+		B3EA9A61236CA764003FCF90 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B3EA9A64236CA7CB003FCF90 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3EA9A5F236CA72A003FCF90 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3EA9A5E236CA72A003FCF90 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B3EA9A62236CA764003FCF90 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3EA9A61236CA764003FCF90 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		B3EA9A65236CA7CB003FCF90 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3EA9A64236CA7CB003FCF90 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3EA9A3E236CA008003FCF90 /* Project object */;
 }
