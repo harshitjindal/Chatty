@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B346090C236CADEB00CB11BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B346090B236CADEB00CB11BD /* SWRevealViewController.m */; };
+		B326B69B236D75E400B84959 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B326B699236D75E400B84959 /* SWRevealViewController.m */; };
+		B326B69D236D774600B84959 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326B69C236D774600B84959 /* ChatVC.swift */; };
+		B326B69F236D776100B84959 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326B69E236D776100B84959 /* ChannelVC.swift */; };
 		B3EA9A4A236CA008003FCF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA9A49236CA008003FCF90 /* AppDelegate.swift */; };
 		B3EA9A4C236CA008003FCF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA9A4B236CA008003FCF90 /* SceneDelegate.swift */; };
-		B3EA9A4E236CA008003FCF90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA9A4D236CA008003FCF90 /* ViewController.swift */; };
 		B3EA9A51236CA008003FCF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EA9A4F236CA008003FCF90 /* Main.storyboard */; };
 		B3EA9A53236CA00B003FCF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EA9A52236CA00B003FCF90 /* Assets.xcassets */; };
 		B3EA9A56236CA00B003FCF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EA9A54236CA00B003FCF90 /* LaunchScreen.storyboard */; };
@@ -20,13 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3460909236CADEB00CB11BD /* Chatty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chatty-Bridging-Header.h"; sourceTree = "<group>"; };
-		B346090A236CADEB00CB11BD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		B346090B236CADEB00CB11BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B326B698236D75E400B84959 /* Chatty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chatty-Bridging-Header.h"; sourceTree = "<group>"; };
+		B326B699236D75E400B84959 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B326B69A236D75E400B84959 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B326B69C236D774600B84959 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		B326B69E236D776100B84959 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		B3EA9A46236CA008003FCF90 /* Chatty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EA9A49236CA008003FCF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3EA9A4B236CA008003FCF90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3EA9A4D236CA008003FCF90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3EA9A50236CA008003FCF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3EA9A52236CA00B003FCF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3EA9A55236CA00B003FCF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,12 +50,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B326B68F236D74C000B84959 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B326B69C236D774600B84959 /* ChatVC.swift */,
+				B326B69E236D776100B84959 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B326B690236D74C800B84959 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B326B691236D74D100B84959 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B3460908236CADCE00CB11BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B346090A236CADEB00CB11BD /* SWRevealViewController.h */,
-				B346090B236CADEB00CB11BD /* SWRevealViewController.m */,
-				B3460909236CADEB00CB11BD /* Chatty-Bridging-Header.h */,
+				B326B69A236D75E400B84959 /* SWRevealViewController.h */,
+				B326B699236D75E400B84959 /* SWRevealViewController.m */,
+				B326B698236D75E400B84959 /* Chatty-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -61,7 +86,6 @@
 		B3EA9A3D236CA008003FCF90 = {
 			isa = PBXGroup;
 			children = (
-				B3460908236CADCE00CB11BD /* Supporting Files */,
 				B3EA9A48236CA008003FCF90 /* Chatty */,
 				B3EA9A47236CA008003FCF90 /* Products */,
 			);
@@ -78,10 +102,13 @@
 		B3EA9A48236CA008003FCF90 /* Chatty */ = {
 			isa = PBXGroup;
 			children = (
+				B326B691236D74D100B84959 /* Model */,
+				B326B690236D74C800B84959 /* View */,
+				B326B68F236D74C000B84959 /* Controller */,
+				B3460908236CADCE00CB11BD /* Supporting Files */,
 				B3EA9A5D236CA580003FCF90 /* Chatty.entitlements */,
 				B3EA9A49236CA008003FCF90 /* AppDelegate.swift */,
 				B3EA9A4B236CA008003FCF90 /* SceneDelegate.swift */,
-				B3EA9A4D236CA008003FCF90 /* ViewController.swift */,
 				B3EA9A4F236CA008003FCF90 /* Main.storyboard */,
 				B3EA9A52236CA00B003FCF90 /* Assets.xcassets */,
 				B3EA9A54236CA00B003FCF90 /* LaunchScreen.storyboard */,
@@ -127,7 +154,7 @@
 				TargetAttributes = {
 					B3EA9A45236CA008003FCF90 = {
 						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1110;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -172,10 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EA9A4E236CA008003FCF90 /* ViewController.swift in Sources */,
+				B326B69D236D774600B84959 /* ChatVC.swift in Sources */,
 				B3EA9A4A236CA008003FCF90 /* AppDelegate.swift in Sources */,
 				B3EA9A4C236CA008003FCF90 /* SceneDelegate.swift in Sources */,
-				B346090C236CADEB00CB11BD /* SWRevealViewController.m in Sources */,
+				B326B69B236D75E400B84959 /* SWRevealViewController.m in Sources */,
+				B326B69F236D776100B84959 /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +350,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Chatty/Chatty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = P3ZEN42ERU;
 				INFOPLIST_FILE = Chatty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -332,8 +359,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.particleq.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chatty/Supporting Files/Chatty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,7 +374,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Chatty/Chatty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = P3ZEN42ERU;
 				INFOPLIST_FILE = Chatty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -357,8 +383,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.particleq.Chatty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Chatty-Bridging-Header.h";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Chatty/Supporting Files/Chatty-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
